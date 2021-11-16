@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<div class="container">
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Titulo</th>
+						<th class="col-md-1"></th>
+						<th class="col-md-1"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let group of groupsList">
+						<td>{{group.description}}</td>
+						<td> <a th:href="" [routerLink]="['/groups/edit']" [queryParams]="{id:group.id_group}">editar</a></td>
+						<td> <a th:href="" (click)="deleteGroup(group)">eliminar</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

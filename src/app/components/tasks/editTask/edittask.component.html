@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+
+  <div class="container">
+    <h2>Editar Tarea</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="updateTask()">
+      <label>
+        Title:
+        <input type="text" formControlName="title">
+      </label>
+      <label>
+        Comments:
+        <input type="text" formControlName="comments">
+      </label>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

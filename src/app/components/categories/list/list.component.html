@@ -13,8 +13,9 @@
 				</thead>
 				<tbody>
 					<tr *ngFor="let category of categoriesList">
-						<td>{{category.title}}</td>
-						<td> <a th:href="" (click)="deleteCategory()">eliminar</a></td>
+						<td>{{category.name}}</td>
+						<td> <a th:href="" [routerLink]="['/categories/edit']" [queryParams]="{id:category.id}">editar</a></td>
+						<td> <a th:href="" (click)="deleteCategory(category)">eliminar</a></td>
 					</tr>
 				</tbody>
 			</table>

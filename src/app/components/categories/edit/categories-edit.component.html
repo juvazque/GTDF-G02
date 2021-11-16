@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+
+  <div class="container">
+    <h2>Editar Categoria</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="updateCategory()">
+      <label>
+        Name:
+        <input type="text" formControlName="name">
+      </label>
+
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

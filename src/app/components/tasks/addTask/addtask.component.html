@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="container" style="text-align: center">
+		<h2 id=userAdd>Añiadir tarea</h2>
+		<form [formGroup]="profileForm" (ngSubmit)="createTask()">
+			<label>
+				Title:
+				<input type="text" formControlName="title">
+			</label>
+			<label>
+				Comments:
+				<input type="text" formControlName="comments">
+			</label>
+			<button type="submit">Create</button>
+		</form>
+	</div>
+</body>
+
+</html>
