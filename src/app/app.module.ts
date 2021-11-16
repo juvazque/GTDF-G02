@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { AddtaskComponent } from './components/tasks/addtask/addtask.component';
+import { EdittaskComponent } from './components/tasks/editTask/edittask.component';
+import { ListtaskComponent } from './components/tasks/listTask/listtask.component';
 import { ListComponent } from './components/users/list/list.component';
 import { AddComponent } from './components/users/add/add.component';
 import { EditComponent } from './components/users/edit/edit.component';
@@ -21,6 +25,9 @@ import { TasksListComponent } from './components/tasks/tasks-list/tasks-list.com
 @NgModule({
   declarations: [
     AppComponent,
+    AddtaskComponent,
+    EdittaskComponent,
+    ListtaskComponent,
     ListComponent,
     AddComponent,
     EditComponent,
