@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AddtaskComponent } from './components/tasks/addtask/addtask.component';
+import { AddtaskComponent } from './components/tasks/addTask/addtask.component';
 import { EdittaskComponent } from './components/tasks/editTask/edittask.component';
 import { ListtaskComponent } from './components/tasks/listTask/listtask.component';
 import { ListComponent } from './components/users/list/list.component';
@@ -18,9 +18,6 @@ import { FooterComponent } from './components/fragments/footer/footer.component'
 import { HeadComponent } from './components/fragments/head/head.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './components/fragments/nav/nav.component';
-import { TasksAddComponent } from './components/tasks/tasks-add/tasks-add.component';
-import { TasksEditComponent } from './components/tasks/tasks-edit/tasks-edit.component';
-import { TasksListComponent } from './components/tasks/tasks-list/tasks-list.component';
 
 @NgModule({
   declarations: [
@@ -36,10 +33,7 @@ import { TasksListComponent } from './components/tasks/tasks-list/tasks-list.com
     NavComponent,
     CategoriesListComponent,
     CategoriesAddComponent,
-    CategoriesEditComponent,
-    TasksAddComponent,
-    TasksEditComponent,
-    TasksListComponent
+    CategoriesEditComponent
   ],
   imports: [
     BrowserModule,

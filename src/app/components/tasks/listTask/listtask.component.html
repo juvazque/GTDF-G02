@@ -17,15 +17,15 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr *ngFor="let user of userList">
+					<tr *ngFor="let task of taskList">
 						<td>{{task.id}}</td>
 						<td>{{task.title}}</td>
 						<td>{{task.comments}}</td>
 						<td>{{task.planned}}</td>
 						<td>{{task.created}}</td>
-						<td>{{task.finalized}}</td>
-
-						<td> <a th:href="" (click)="deleteTask()">eliminar</a></td>
+						<td>{{task.finished}}</td>
+						<td> <a th:href="" [routerLink]="['/tasks/edit']" [queryParams]="{id:task.id}" >editar</a></td>
+						<td> <a th:href="" (click)="deleteTask(task)">eliminar</a></td>
 					</tr>
 				</tbody>
 			</table>

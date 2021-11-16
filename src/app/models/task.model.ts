@@ -3,7 +3,7 @@ import { Group } from "./group.model";
 import { User } from "./user.model";
 
 export class Task {
-    id?: number;
+    id: number;
     title?: string;
     comments?: string;
     created?: Date;
@@ -13,11 +13,9 @@ export class Task {
     category?: Category;
     group?: Group;
 
-    constructor(id?: number, title?: string, comments?: string, created?: Date, planned?: Date, finished?: Date, user?: User, category?: Category, group?: Group) {
+    constructor(id: number, title?: string, comments?: string, created?: Date, planned?: Date, finished?: Date, user?: User, category?: Category, group?: Group) {
         {
-            if (id) {
                 this.id = id;
-            }
             if (title) {
                 this.title = title;
             }
