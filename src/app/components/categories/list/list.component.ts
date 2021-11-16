@@ -9,6 +9,8 @@ export class CategoriesListComponent implements OnInit {
 
   constructor() { }
 
+  categoriesList:any=[];
+  
   ngOnInit(): void {
   }
 
