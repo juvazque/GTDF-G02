@@ -22,10 +22,10 @@
 						<td>{{user.id}}</td>
 						<td>{{user.email}}</td>
 						<td>{{user.login}}</td>
-						<td>{{user.isAdmin}}</td>
+						<td>{{user.admin}}</td>
 						<td>{{user.status}}</td>
-						<td> <a th:href="" (click)="editUser()">editar</a></td>
-						<td> <a th:href="" (click)="deleteUser()">eliminar</a></td>
+						<td> <a th:href="" [routerLink]="['/users/edit']" [queryParams]="{id:user.id}" >editar</a></td>
+						<td> <a th:href="" (click)="deleteUser(user)">eliminar</a></td>
 					</tr>
 				</tbody>
 			</table>
