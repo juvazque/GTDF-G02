@@ -9,6 +9,8 @@ export class UsersListComponent implements OnInit {
 
   constructor() { }
 
+  userList:any=[];
+  
   ngOnInit(): void {
   }
 
