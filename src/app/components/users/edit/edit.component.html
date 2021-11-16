@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+
+  <div class="container">
+    <h2>Editar Usuario</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="updateUser()">
+      <label>
+        Email:
+        <input type="text" formControlName="email">
+      </label>
+      <label>
+        Login:
+        <input type="text" formControlName="login">
+      </label>
+      <label>
+        Password:
+        <input type="text" formControlName="password">
+      </label>
+      <button type="submit">Update</button> 
+    </form>
+  </div>
+
+</body>
+
+</html>

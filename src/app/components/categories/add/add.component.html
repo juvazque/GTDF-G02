@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="container" style="text-align: center">
+		<h2 id=categoryAdd>Añadir categoria</h2>
+		<form [formGroup]="profileForm" (ngSubmit)="createCategory()">
+			<label>
+				Name:
+				<input type="text" formControlName="name">
+			</label>
+			<button type="submit">Create</button>
+		</form>
+	</div>
+</body>
+
+</html>

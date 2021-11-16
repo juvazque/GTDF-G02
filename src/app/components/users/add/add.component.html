@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="container" style="text-align: center">
+		<h2 id=userAdd>Añadir usuario</h2>
+		<form [formGroup]="profileForm" (ngSubmit)="createUser()">
+			<label>
+				Email:
+				<input type="text" formControlName="email">
+			</label>
+			<label>
+				Login:
+				<input type="text" formControlName="login">
+			</label>
+			<label>
+				Password:
+				<input type="text" formControlName="password">
+			</label>
+			<button type="submit">Create</button>
+		</form>
+	</div>
+</body>
+
+</html>
