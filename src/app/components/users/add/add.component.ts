@@ -28,7 +28,7 @@ export class AddComponent implements OnInit {
     user.login = this.profileForm.controls['login'].value;
     user.password = this.profileForm.controls['password'].value;
     this._userService.postUser(user).subscribe();
-    this.router.navigate(['/categories/list'])
+    this.router.navigate(['/users/list'])
   }
 
 }

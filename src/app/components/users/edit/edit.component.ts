@@ -35,7 +35,7 @@ export class EditComponent implements OnInit {
     user.login=this.profileForm.controls['login'].value;
     user.password=this.profileForm.controls['password'].value;
     this._userService.putUser(this.id, user).subscribe();
-    this.router.navigate(['/categories/list'])
+    this.router.navigate(['/users/list'])
   }
 
 }

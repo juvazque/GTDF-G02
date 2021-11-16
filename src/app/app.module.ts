@@ -18,6 +18,9 @@ import { FooterComponent } from './components/fragments/footer/footer.component'
 import { HeadComponent } from './components/fragments/head/head.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './components/fragments/nav/nav.component';
+import { GroupAddComponent } from './components/groups/group-add/group-add.component';
+import { GroupEditComponent } from './components/groups/group-edit/group-edit.component';
+import { GroupListComponent } from './components/groups/group-list/group-list.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { NavComponent } from './components/fragments/nav/nav.component';
     NavComponent,
     CategoriesListComponent,
     CategoriesAddComponent,
-    CategoriesEditComponent
+    CategoriesEditComponent,
+    GroupAddComponent,
+    GroupEditComponent,
+    GroupListComponent
   ],
   imports: [
     BrowserModule,
